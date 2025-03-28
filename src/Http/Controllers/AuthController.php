@@ -22,7 +22,7 @@ class AuthController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:' . (new $this->userModel)->getTable(),
+            'email' => 'required|string|email|max:255|unique',
             'password' => 'required|string|min:6'
         ]); 
 
