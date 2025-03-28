@@ -3,8 +3,8 @@
     "description": "Authentication jwt for laravel",
     "type": "library",
     "require": {
-        "tymon/jwt-auth": "2.1",
-        "illuminate/support": "11.0"
+        "tymon/jwt-auth": "^2.1",
+        "illuminate/support": "^11.0"
     },
     "license": "MIT",
     "autoload": {
