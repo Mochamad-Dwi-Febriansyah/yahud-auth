@@ -1,0 +1,30 @@
+{
+    "name": "brian/yahud-auth",
+    "description": "Authentication jwt for laravel",
+    "type": "library",
+    "require": {
+        "tymon/jwt-auth": "2.1",
+        "illuminate/support": "11.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Brian\\YahudAuth\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mochamad Dwi Febriansyah",
+            "email": "iniakunnyaorangjoos@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brian\\YahudAuth\\AuthServiceProvider"
+            ]
+        }
+    }
+}
