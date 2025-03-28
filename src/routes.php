@@ -8,5 +8,5 @@ Route::prefix('api/auth')->group(function () {
     Route::post('register', [AuthController::class, 'register']);
     Route::post('logout', [AuthController::class, 'logout']);
     Route::post('refresh', [AuthController::class, 'refresh']);
-    Route::get('me', [AuthController::class, 'me']);
+    Route::middleware('auth.jwt')->get('me', [AuthController::class, 'me']);
 });
